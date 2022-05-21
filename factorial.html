@@ -1,0 +1,31 @@
+<html>
+	<head></head>
+		<body style="text-align:center;font-size:30px">
+
+			<h1>Calculate the factorial number in digit</h1>
+			
+			Enter number:<input type="text" name="t1" id="t1" placeholder="Number of digit" required><br><br>
+			<button type="submit" onclick="factorial()">factorial</button>
+			<p id="res"></p>
+			
+			
+           		<script>
+				function factorial()
+				{
+					var x,i,f=1;
+						
+				    	x=document.getElementById("t1").value;
+					
+						for(i=1;i<=x;i++)
+						{
+							f=f*i;
+							
+						}
+							document.getElementById("res").innerHTML="factorial number:"+f;
+					
+					}
+				
+			</script>
+</body>
+                  
+</html>
